@@ -1,2 +1,20 @@
 # nphies Immunization Implementation Guide
-This IG defines the FHIR profiles and specifications for immunization exchange.
+
+## Introduction
+
+This Implementation Guide defines the FHIR-based interface specification for immunization exchange within nphies.
+
+It provides:
+
+- Profiles
+- Terminology bindings
+- Examples
+- Implementation guidance
+
+## Scope
+
+This guide supports standardized exchange of immunization data between healthcare systems and nphies.
+
+## Status
+
+Draft version.
