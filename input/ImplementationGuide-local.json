@@ -1,17 +1,33 @@
-"definition": {
-  "resource": [],
-  "page": {
-    "nameUrl": "index.html",
-    "title": "Home",
-    "generation": "markdown",
-    "sourceUrl": "index.md",
-    "page": [
-      {
-        "nameUrl": "profiles.html",
-        "title": "Profiles",
-        "generation": "markdown",
-        "sourceUrl": "profiles.md"
-      }
-    ]
+{
+  "resourceType": "ImplementationGuide",
+  "id": "nphies-immunization-ig",
+  "url": "https://aldanahalshathri.github.io/nphies-immunization-ig",
+  "version": "0.1.0",
+  "name": "NphiesImmunizationIG",
+  "title": "nphies Immunization Implementation Guide",
+  "status": "draft",
+  "experimental": true,
+  "publisher": "nphies",
+  "packageId": "sa.nphies.immunization.ig",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [],
+    "page": {
+      "nameUrl": "index.html",
+      "title": "Home",
+      "generation": "markdown",
+      "sourceUrl": "index.md",
+      "page": [
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown",
+          "sourceUrl": "profiles.md"
+        }
+      ]
+    }
   }
 }
