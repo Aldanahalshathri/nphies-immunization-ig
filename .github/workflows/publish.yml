@@ -1,0 +1,44 @@
+name: Publish FHIR IG
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Download IG Publisher
+        run: |
+          mkdir tools
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o tools/publisher.jar
+
+      - name: Build IG
+        run: java -jar tools/publisher.jar -ig ig.ini
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: output
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/deploy-pages@v4
