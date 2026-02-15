@@ -1,35 +1,17 @@
-{
-  "resourceType": "ImplementationGuide",
-  "id": "local",
-  "url": "https://YOUR_GITHUB_USERNAME.github.io/my-local-fhir-ig",
-  "version": "0.1.0",
-  "name": "LocalFHIRIG",
-  "title": "Local FHIR Implementation Guide",
-  "status": "draft",
-  "experimental": true,
-  "publisher": "Your Organization",
-  "description": "A local Implementation Guide with profiles and examples.",
-  "packageId": "local.fhir.ig",
-  "fhirVersion": ["4.0.1"],
-  "definition": {
-    "resource": [
+"definition": {
+  "resource": [],
+  "page": {
+    "nameUrl": "index.html",
+    "title": "Home",
+    "generation": "markdown",
+    "sourceUrl": "index.md",
+    "page": [
       {
-        "reference": { "reference": "StructureDefinition/local-immunization" },
-        "name": "Local Immunization Profile",
-        "description": "Example local profile on Immunization."
+        "nameUrl": "profiles.html",
+        "title": "Profiles",
+        "generation": "markdown",
+        "sourceUrl": "profiles.md"
       }
-    ],
-    "page": {
-      "nameUrl": "index.html",
-      "title": "Home",
-      "generation": "markdown",
-      "page": [
-        {
-          "nameUrl": "profiles.html",
-          "title": "Profiles",
-          "generation": "markdown"
-        }
-      ]
-    }
+    ]
   }
 }
